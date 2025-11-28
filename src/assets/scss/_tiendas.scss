@@ -1,0 +1,157 @@
+.tiendas-container {
+  padding: 20px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .sucursales-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    .section-header {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: #6b7280;
+        font-size: 14px;
+      }
+    }
+
+    .actions-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-bottom: 20px;
+
+      button {
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 14px;
+        
+        &.download-btn {
+          color: #4F46E5;
+          background: transparent;
+          border: 1px solid #E5E7EB;
+          
+          &:hover {
+            background: #F9FAFB;
+          }
+        }
+
+        &.upload-btn {
+          background: #F3F4F6;
+          border: 1px solid #E5E7EB;
+          
+          &:hover {
+            background: #E5E7EB;
+          }
+        }
+
+        &.nueva-sucursal {
+          background: #4F46E5;
+          color: white;
+          border: none;
+          
+          &:hover {
+            background: #4338CA;
+          }
+        }
+      }
+    }
+
+    .tiendas-table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #E5E7EB;
+      }
+
+      th {
+        font-weight: 500;
+        color: #374151;
+        background: #F9FAFB;
+      }
+
+      td {
+        color: #6B7280;
+      }
+
+      .actions {
+        display: flex;
+        gap: 8px;
+
+        button {
+          padding: 6px;
+          border-radius: 4px;
+          background: transparent;
+          
+          &:hover {
+            background: #F3F4F6;
+          }
+        }
+      }
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #E5E7EB;
+
+      .per-page {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        
+        select {
+          padding: 4px 8px;
+          border-radius: 4px;
+          border: 1px solid #E5E7EB;
+        }
+      }
+
+      .pages {
+        display: flex;
+        gap: 4px;
+
+        button {
+          padding: 6px 12px;
+          border-radius: 4px;
+          border: 1px solid #E5E7EB;
+          
+          &.active {
+            background: #4F46E5;
+            color: white;
+            border: none;
+          }
+          
+          &:hover:not(.active) {
+            background: #F3F4F6;
+          }
+        }
+      }
+    }
+  }
+} 

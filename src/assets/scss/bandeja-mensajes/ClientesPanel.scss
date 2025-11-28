@@ -1,0 +1,216 @@
+// _ClientesPanel.scss
+@use "sass:color";
+
+// Variables
+$clientes-panel-bg: #ffffff;
+$clientes-panel-border-radius: 18px;
+$clientes-panel-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+$clientes-panel-width: 300px;
+$clientes-panel-height: 87vh; // Manteniendo tu altura
+
+$clientes-title-font-size: 16px;
+$clientes-title-font-weight: 700;
+$clientes-title-padding: 1rem 1.5rem 0.5rem 1.5rem; // De tu .card-title
+$clientes-title-color: #1f2937; // Un color oscuro estándar para títulos
+
+$list-item-bg: #f9fafb;
+$list-item-bg-hover: #f0f2f5;
+$list-item-active-bg: #e5edff;
+$list-item-active-border-color: #6a8bff;
+$list-item-border-radius: 12px;
+$list-item-padding: 12px 15px; // Ligeramente más padding
+$list-item-margin-bottom: 10px;
+
+$list-item-numero-font-weight: 500;
+$list-item-numero-font-size: 0.9rem;
+$list-item-numero-color: #374151;
+
+$list-item-info-font-size: 12px;
+$list-item-info-color: #6b7280;
+
+$scrollbar-thumb-color: #cdd2d9;
+$scrollbar-track-color: #f3f4f6;
+
+$panel-bg: #ffffff;
+$border-color: #eef0f2;
+$panel-altura: 97vh;
+
+$font-size-base: 0.9rem;
+$font-size-sm: 0.78rem;
+$font-size-xs: 0.7rem;
+
+.clientes-panel-wrapper {
+  background: $clientes-panel-bg;
+  border-radius: $clientes-panel-border-radius;
+  box-shadow: $clientes-panel-box-shadow;
+  width: $clientes-panel-width;
+  min-width: $clientes-panel-width;
+  max-width: $clientes-panel-width;
+  height: $clientes-panel-height;
+  min-height: $clientes-panel-height;
+  max-height: $clientes-panel-height;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0.5rem;
+  font-size: $font-size-base;
+}
+
+.clientes-panel-header {
+  padding: 0.5rem 1rem 0.3rem 1rem;
+}
+
+.clientes-panel-title {
+  font-size: $clientes-title-font-size;
+  font-weight: $clientes-title-font-weight;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+  color: $clientes-title-color;
+}
+
+.clientes-panel-empty-state {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: $list-item-info-color;
+}
+
+.clientes-list-scroll-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-bottom: 0;
+
+  &::-webkit-scrollbar { width: 7px; }
+  &::-webkit-scrollbar-track { background: $scrollbar-track-color; border-radius: 3px; margin: 5px 0; }
+  &::-webkit-scrollbar-thumb { background-color: $scrollbar-thumb-color; border-radius: 3px; }
+  &:hover::-webkit-scrollbar-thumb { background-color: color.adjust($scrollbar-thumb-color, $lightness: -10%); }
+}
+
+.clientes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cliente-item {
+  background: $list-item-bg;
+  border-radius: $list-item-border-radius;
+  padding: 6px 8px;
+  margin-bottom: 7px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, border-left-color 0.2s ease-in-out;
+  border-left: 4px solid transparent; // Borde para estado activo
+  font-size: $font-size-base;
+
+  &:hover {
+    background: $list-item-bg-hover;
+  }
+
+  &.activo {
+    background: $list-item-active-bg;
+    border-left-color: $list-item-active-border-color;
+
+    .cliente-numero {
+      font-weight: 600; // Más énfasis en el activo
+      color: color.adjust($list-item-active-border-color, $lightness: -15%);
+    }
+  }
+}
+
+.cliente-numero {
+  font-weight: $list-item-numero-font-weight;
+  font-size: $list-item-numero-font-size;
+  color: $list-item-numero-color;
+  margin-bottom: 3px;
+  display: block;
+  word-break: break-all; // Para números largos
+}
+
+.cliente-mensajes-info {
+  font-size: $list-item-info-font-size;
+  color: $list-item-info-color;
+  display: block;
+}
+
+body {
+  font-size: $font-size-base;
+}
+
+.burbuja {
+  padding: 0.5rem 0.8rem;
+  font-size: $font-size-base;
+}
+
+.chat-panel-card {
+  background-color: $panel-bg;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size-base;
+  max-width: 1000px; // Si quieres limitar el ancho, AJUSTA aquí
+}
+
+.card-body {
+  padding: 0.5rem; // REDUCIDO
+}
+
+.chat-header-custom {
+  padding-bottom: 0.4rem; // REDUCIDO
+  margin-bottom: 0.4rem;
+}
+
+.chat-messages-custom {
+  flex-grow: 1;
+  min-height: 300px;
+  max-height: unset;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem; // más separación entre mensajes
+
+  .mensaje .burbuja {
+    padding: 0.6rem 1rem;
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    margin-bottom: 0; // el gap lo da el contenedor
+  }
+}
+
+.chat-input-area-custom {
+  padding-top: 0.4rem; // REDUCIDO
+  .input-col {
+    padding: 0.3rem 0.4rem; // REDUCIDO
+    textarea.chat-textarea {
+      min-height: 32px; // REDUCIDO
+      font-size: $font-size-base;
+    }
+  }
+  .actions-col .buttons-stack .btn {
+    font-size: $font-size-sm;
+    padding: 0.3rem 0.5rem; // REDUCIDO
+  }
+}
+
+.contenedor-paneles {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  width: 100%;
+}
+.nuevo-mensaje-badge {
+  margin-left: 5px; /* Espacio entre el texto y el badge */
+  font-size: 0.8em; /* Ajusta el tamaño de la fuente si es necesario */
+}

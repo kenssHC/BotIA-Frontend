@@ -1,0 +1,215 @@
+.main-content-wrapper {
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 18px;
+  .chevron {
+    margin: 0 6px;
+  }
+  .current {
+    color: #000000;
+    font-weight: 600;
+  }
+}
+
+.main-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(16, 30, 54, 0.06);
+  padding: 32px 32px 24px 32px;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  .title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #23272e;
+  }
+  .nuevo-recordatorio-btn {
+    background: #6a8bff;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 1rem;
+    box-shadow: none;
+    &:hover {
+      background: #4d6edb;
+    }
+  }
+}
+
+.divider {
+  border: none;
+  border-top: 1.5px solid #e3e8f0;
+  margin: 0 0 18px 0;
+}
+
+.subtitle-block {
+  margin-bottom: 18px;
+  .subtitle {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #23272e;
+    margin-bottom: 2px;
+    text-align: left;
+  }
+  .desc {
+    color: #8a94a6;
+    font-size: 1rem;
+  }
+}
+
+.table-block {
+  .table-responsive {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1.5px solid #e3e8f0;
+    background: #fff;
+    margin-bottom: 18px;
+  }
+  .reminders-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    th, td {
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 1rem;
+    }
+    th {
+      background: #f6f8fc;
+      color: #23272e;
+      font-weight: 700;
+      border-bottom: 1.5px solid #e3e8f0;
+    }
+    td {
+      background: #fff;
+      color: #23272e;
+      border-bottom: 1px solid #e3e8f0;
+      vertical-align: middle;
+    }
+    .icon-wsp {
+      color: #25d366;
+      font-size: 1.35rem;
+    }
+    .icon-call {
+      color: #4d6edb;
+      font-size: 1.35rem;
+    }
+    .actions-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}
+
+.pagination-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  justify-content: flex-end;
+  .records-select {
+    border-radius: 6px;
+    border: 1px solid #e3e8f0;
+    padding: 4px 10px;
+    margin: 0 8px;
+    font-size: 1rem;
+    color: #23272e;
+    background: #fff;
+  }
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    .page-btn {
+      border: none;
+      background: none;
+      color: #23272e;
+      font-size: 1rem;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      &.active, &:hover {
+        background: #dbe5ff;
+        color: #4d6edb;
+      }
+      &:disabled {
+        color: #bfc8da;
+        background: none;
+      }
+    }
+  }
+}
+
+// Estilos para el menú de acciones y menú de nuevo recordatorio
+.MuiMenu-paper {
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px 0 rgba(16, 30, 54, 0.10) !important;
+  min-width: 180px !important;
+  .MuiMenuItem-root {
+    font-size: 1rem;
+    color: #23272e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &:hover {
+      background: #f6f8fc;
+    }
+    .icon-wsp {
+      color: #25d366;
+      font-size: 1.2rem;
+    }
+    .icon-call {
+      color: #4d6edb;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.dropdown-menu-end {
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 8px 0;
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: #333;
+    background: none;
+    border: none;
+    width: 100%;
+    transition: background 0.2s;
+    &:hover {
+      background: #f5f5f5;
+    }
+    &.text-danger {
+      color: #E53935 !important;
+      font-weight: 500;
+      &:hover {
+        background: #FEE2E2 !important;
+      }
+    }
+    .me-2 {
+      margin-right: 0.5rem !important;
+      font-size: 18px;
+    }
+  }
+} 

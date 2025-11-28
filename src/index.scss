@@ -1,0 +1,54 @@
+@forward "./assets/scss/variables";
+@forward "./assets/scss/switcher";
+@forward "./assets/scss/tiendas";
+@forward "./assets/scss/informacion-negocio";
+
+// custom style sheets 
+@import './assets/css/icons.css';
+@import "./assets/css/styles.css";
+
+//Gallery
+@import 'yet-another-react-lightbox/styles.css';
+@import 'yet-another-react-lightbox/plugins/thumbnails.css';
+
+// Filepond
+@import 'filepond/dist/filepond.min.css';
+@import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
+
+//Leaflet Map
+@import 'leaflet/dist/leaflet.css';
+
+//Swiper 
+@import '../node_modules/swiper/swiper.css';
+@import '../node_modules/swiper/modules/pagination.css';
+@import '../node_modules/swiper/modules/navigation.css';
+@import '../node_modules/swiper/modules/effect-flip.css';
+@import '../node_modules/swiper/modules/effect-fade.css';
+@import '../node_modules/swiper/modules/effect-cube.css';
+@import '../node_modules/swiper/modules/scrollbar.css';
+@import '../node_modules/swiper/modules/free-mode.css';
+
+//Sun Edttor
+@import 'suneditor/dist/css/suneditor.min.css';
+
+//Simplebar
+@import 'simplebar-react/dist/simplebar.min.css';
+
+//Notification
+@import 'react-toastify/dist/ReactToastify.css';
+
+//Date Picker
+@import "react-datepicker/dist/react-datepicker.css";
+
+//simonwep colorpicker
+@import "@simonwep/pickr/dist/themes/classic.min.css";
+@import "@simonwep/pickr/dist/themes/monolith.min.css";
+@import "@simonwep/pickr/dist/themes/nano.min.css";
+
+//Data tables 
+@import 'primereact/resources/themes/lara-light-cyan/theme.css';
+
+
+//Grid js Tables Css
+@import "gridjs/dist/theme/mermaid.css";
+

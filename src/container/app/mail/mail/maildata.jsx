@@ -1,0 +1,136 @@
+import image1 from '../../../../assets/images/faces/5.jpg';
+import image2 from '../../../../assets/images/faces/2.jpg';
+import image3 from '../../../../assets/images/faces/9.jpg';
+import image4 from '../../../../assets/images/faces/10.jpg';
+import image5 from '../../../../assets/images/faces/12.jpg';
+import image6 from '../../../../assets/images/faces/14.jpg';
+import image7 from '../../../../assets/images/faces/16.jpg';
+import image8 from '../../../../assets/images/faces/7.jpg';
+import image9 from '../../../../assets/images/faces/10.jpg';
+import image10 from '../../../../assets/images/faces/1.jpg';
+
+
+
+export const Maildata1 = [
+    {
+        id: 1,
+        isUnread: true,
+        isStarred: false,
+        image: image1,
+        from: 'Adrian Monino',
+        subject: 'Someone who believes in you',
+        body: 'enean commodo li gula eget dolor cum socia eget dolor enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: true,
+        date: '11:30am',
+    },
+    {
+        id: 2,
+        isUnread: true,
+        isStarred: true,
+        image: image2,
+        from: 'Albert Ansing',
+        subject: 'Heres What You Missed This Week',
+        body: 'enean commodo li gula eget dolor cum socia eget dolor enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: false,
+        date: '06:50am',
+    },
+    {
+        id: 3,
+        isUnread: true,
+        isStarred: false,
+        image: image3,
+        from: 'Carla Guden',
+        subject: '4 Ways to Optimize Your Search ',
+        body: 'viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: true,
+        date: 'Yesterday',
+    },
+    {
+        id: 4,
+        isUnread: true,
+        isStarred: false,
+        image: image4,
+        from: 'Reven Galeon',
+        subject: 'We  Giving a Macbook for Free',
+        body: 'viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: false,
+        date: 'Yesterday',
+    },
+    {
+        id: 5,
+        isUnread: true,
+        isStarred: false,
+        image: image5,
+        from: 'Keep Your Personal Data Safe ',
+        subject: 'We  Giving a Macbook for Free',
+        body: 'viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: false,
+        date: 'Oct 13',
+    },
+    {
+        id: 6,
+        isUnread: true,
+        isStarred: false,
+        image: image6,
+        from: 'Marianne Audrey ',
+        subject: 'We Made Some Changes',
+        body: 'viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: false,
+        date: 'Oct 13',
+    },
+    {
+        id: 7,
+        isUnread: true,
+        isStarred: false,
+        image: image5,
+        from: 'Jane Phoebe',
+        subject: 'Grab Our Holiday Deals ',
+        body: 'viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: false,
+        date: 'Oct 12',
+    },
+    {
+        id: 8,
+        isUnread: true,
+        isStarred: false,
+        image: image7,
+        from: 'Raffy Godinez',
+        subject: 'Just a Few Steps Away',
+        body: 'viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: false,
+        date: 'Oct 05',
+    },
+    {
+        id: 9,
+        isUnread: true,
+        isStarred: true,
+        image: image8,
+        from: 'Allan Cadungog',
+        subject: 'Credit Card Promos',
+        body: 'viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: false,
+        date: 'Oct 04',
+    },
+    {
+        id: 10,
+        isUnread: true,
+        isStarred: false,
+        image: image9,
+        from: 'Alfie Salinas',
+        subject: '4 Ways to Optimize Your Search ',
+        body: 'viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: false,
+        date: 'Oct 02',
+    },
+    {
+        id: 11,
+        isUnread: true,
+        isStarred: false,
+        image: image10,
+        from: 'Jove Guden',
+        subject: 'Keep Your Personal Data Safe',
+        body: 'viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor',
+        hasAttachment: false,
+        date: 'Oct 02',
+    },
+]

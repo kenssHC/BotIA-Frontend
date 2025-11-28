@@ -1,0 +1,242 @@
+.chat-flotante-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  
+    .chat-fab {
+      width: 48px;
+      height: 48px;
+      background-color: #6A8BFF;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .chat-box {
+        width: 400px;
+        height: 550px;
+        background: white;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        .chat-header {
+            padding: 16px 20px;
+            background-color: #6A8BFF;
+            font-size: 16px;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          
+            .left {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            }
+          
+            .chat-title {
+              font-weight: 500;
+              font-size: 14px;
+              color: #fff;
+            }
+          
+            .icon-bot {
+              width: 40px;
+              height: 40px;
+              background: transparent url('../../img/icon_novali.svg') center center no-repeat;
+              background-size: cover;
+              border-radius: 50%;
+            }
+          
+            .dots,
+            .close {
+              font-size: 20px;
+              cursor: pointer;
+              color: #ffffff;
+              margin-left: 6px;
+            }
+          }
+          
+      .chat-sub {
+        padding: 10px 20px;
+        font-size: 13px;
+        color: #464646;
+        text-align: center;
+        opacity: 1;
+      }
+  
+      .chat-mensajes {
+        flex: 1;
+        padding: 16px;
+        overflow-y: auto;
+        font-size: 14px;
+        align-items: flex-start;
+  
+        .mensaje {
+           display: flex;
+          margin-bottom: 14px;
+          max-width: 80%;
+  
+          &.bot {
+            .avatar {
+              width: 32px;
+              height: 32px;
+              background: url('../../img/icon_novali.svg') center center no-repeat;
+              background-size: cover;
+              border-radius: 50%;
+              margin-right: 8px;
+            }
+    
+            .bubble {
+              background: #f1f5ff;
+              padding: 10px 14px;
+              border-radius: 16px;
+              border-top-left-radius: 0;
+              
+              code {
+                background: #e8eeff !important;
+                color: #2c5aa0;
+                font-family: 'Courier New', monospace;
+                font-size: 12px;
+              }
+              
+              strong {
+                color: #2c5aa0;
+                font-weight: 600;
+              }
+            }
+          }
+  
+          &.user {
+            justify-content: flex-end;
+    
+            .bubble {
+              background: #BDCBFF;
+              padding: 10px 14px;
+              border-radius: 16px;
+              border-top-right-radius: 0;
+              max-width: 80%;
+            }
+          }
+          .hora {
+            font-size: 11px;
+            color: #6D6D6D;
+            margin-top: 4px;
+            text-align: right;
+          }
+
+        }
+        .mensaje-texto {
+            max-width: 80%;
+        }
+        
+        // Indicador de escritura
+        .typing-indicator {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+          
+          span {
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: #9ca3af;
+            display: inline-block;
+            margin-right: 4px;
+            animation: typing 1.4s infinite ease-in-out;
+            
+            &:nth-child(2) {
+              animation-delay: 0.2s;
+            }
+            
+            &:nth-child(3) {
+              animation-delay: 0.4s;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      
+      @keyframes typing {
+        0%, 60%, 100% {
+          transform: translateY(0);
+          opacity: 0.5;
+        }
+        30% {
+          transform: translateY(-10px);
+          opacity: 1;
+        }
+      }
+  
+      .chat-input {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-top: 1px solid #e5e7eb;
+        background: white;
+  
+        input {
+          flex: 1;
+          border: none;
+          outline: none;
+          font-size: 14px;
+        }
+  
+        .enviar-icono {
+          width: 18px;
+          height: 18px;
+          margin-left: 8px;
+          background: transparent url('../../img/icono_enviar.svg') center center no-repeat;
+          opacity: 1;
+          position: relative;
+          cursor: pointer;
+        }
+        .icono-emojis {
+            width: 18px;
+            height: 18px;
+
+            margin-left: 8px;
+            background: transparent url('../../img/icono_emoji.svg') center center no-repeat;
+            opacity: 1;
+            position: relative;
+            cursor: pointer;
+        }
+      }
+    }
+  }
+  
+  // Estilos para mensajes de error
+  .chat-flotante-container .chat-box .chat-mensajes .mensaje.bot.error {
+    .bubble {
+      background: #ffebee !important;
+      border-left: 3px solid #f44336;
+      
+      strong {
+        color: #d32f2f !important;
+      }
+    }
+    
+    .avatar {
+      filter: sepia(100%) hue-rotate(320deg) saturate(2) brightness(0.8);
+    }
+  }
+  
+  // Estado deshabilitado para input
+  .chat-flotante-container .chat-box .chat-input input:disabled {
+    background-color: #f5f5f5;
+    color: #9e9e9e;
+    cursor: not-allowed;
+  }
+  
+  // Estado deshabilitado para el botón de enviar
+  .chat-flotante-container .chat-box .chat-input .enviar-icono.disabled {
+    cursor: not-allowed;
+    filter: grayscale(100%);
+  }
+  

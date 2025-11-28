@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.374" height="19.374" viewBox="0 0 19.374 19.374">
+  <g id="icono_enviar" transform="translate(0.625 0.884)">
+    <rect id="Area" width="18" height="18" transform="translate(-0.135 0)" fill="#fcfcfc" opacity="0"/>
+    <g id="Icon">
+      <line id="d4765dd6-0ac4-412a-83bf-a676fb8a2f82" x1="9.5" y2="9.5" transform="translate(8.365 0)" fill="none" stroke="#6a8bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+      <path id="_8052c513-609d-4549-b8f8-a50c56440a92" data-name="8052c513-609d-4549-b8f8-a50c56440a92" d="M19.865,2,13.612,19.865l-3.573-8.039L2,8.253Z" transform="translate(-2 -2)" fill="none" stroke="#6a8bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,503 @@
+/* src/components/usuarios/UserManagement.scss */
+@use "sass:color"; // Importa el módulo de color UNA SOLA VEZ
+
+// --- Variables Sass y CSS ---
+$primary-color-value: #6366f1; // Azul del botón/activo
+
+:root {
+  // Variables CSS usadas por el navegador
+  --primary-color: #6A8BFF;
+  --primary-color-border: #8FA7FF;
+  --primary-light: #e0e7ff; // Azul claro para paginación activa
+  --primary-lighter: #eef2ff;
+  --text-dark: #111827;    // Texto oscuro/títulos
+  --text-medium: #4b5563; // Texto gris medio
+  --text-light: #6b7280;  // Texto gris claro/descripciones
+  --background-light: #f9fafb; // Gris muy claro para fondo th
+  --background-white: #ffffff; // Fondo de cards, etc.
+  --border-color: #e5e7eb; // Bordes generales
+  --page-background: #F8FAFC;
+}
+
+// --- Estilos del Componente UserManagement ---
+.user-management-view {
+  padding: 1rem 1.5rem;
+  background-color: var(--page-background);
+  min-height: 100vh;
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0 0 1rem 0;
+  }
+
+  // --- Cabecera Superior (Título 'Usuarios' + Botón 'Nuevo Usuario') ---
+  &__header {
+    display: flex;              // Alinear título y botón
+    justify-content: space-between; // Ponerlos en extremos opuestos
+    align-items: center;        // Centrar verticalmente
+    margin-bottom: 1rem;      // Espacio debajo
+    padding: 0.5rem 0;     // Pequeño espacio extra si se necesita
+
+    h1 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin: 0;
+    }
+  }
+
+  &__header-title {
+    font-size: 1.8rem;          // Título más grande
+    font-weight: 700;           // Más grueso
+    color: var(--text-dark);    // Color oscuro
+    margin: 0;                  // Quitar margen por defecto si lo tuviera
+  }
+
+  // --- Estilos del Botón (Aplicados al botón en el header superior) ---
+  .um-btn { // Clase prefijada para evitar colisiones
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.95rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    white-space: nowrap;
+
+    &--primary {
+      background-color: var(--primary-color);
+      color: white;
+
+      &:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  .user-card {
+    background-color: var(--background-white);
+    border-radius: 0.5rem;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    &__main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    padding: 1.5rem;
+      border-bottom: 1px solid var(--primary-color-border);
+    }
+
+    &__main-title {
+      font-size: 1.50rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin: 0;
+    }
+
+    &__content {
+      padding: 1.5rem;
+    }
+
+    &__section-header {
+      margin-bottom: 1.5rem;
+    }
+
+    &__subtitle {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin: 0 0 0.5rem 0;
+    }
+
+    &__description {
+      color: var(--text-light);
+      font-size: 0.875rem;
+      margin: 0;
+    }
+  }
+
+  // --- Barra de Búsqueda ---
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-color-border);
+    border-radius: 0.575rem;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1.5rem;
+    max-width: 35rem;
+    background-color: var(--background-white);
+
+    &__icon {
+      color: var(--text-light);
+      margin-right: 0.5rem;
+    }
+
+    &__input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 0.875rem;
+      color: var(--text-medium);
+      background-color: transparent;
+
+      &::placeholder {
+        color: var(--text-light);
+      }
+    }
+  }
+
+  // --- Contenedor de la Tabla (para borde y scroll) ---
+  .user-table-wrapper {
+    border: 1px solid var(--primary-color-border);
+    border-radius: 0.75rem;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+    background-color: var(--background-white);
+  }
+
+  // --- Tabla ---
+  .user-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    th {
+      background-color: var(--background-light);
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-transform: capitalize;
+      text-align: left;
+      border-bottom: 1px solid var(--primary-color-border);
+    }
+
+    td {
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: var(--text-dark);
+      border-bottom: 1px solid var(--border-color);
+      background-color: var(--background-white);
+    }
+
+    tr {
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: var(--primary-lighter);
+        cursor: pointer;
+
+        td {
+          background-color: var(--primary-lighter);
+        }
+      }
+    }
+
+    tr:last-child td {
+       border-bottom: none;
+    }
+
+    // Estilos específicos para nombre/email si se necesitan
+    .user-name {
+      font-weight: 500;
+    }
+    .user-email {
+      color: var(--text-medium);
+    }
+
+    // Contenedor de acciones (toggle + botón opciones)
+    &__actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  // --- Toggle Switch ---
+  .toggle-switch {
+    width: 2.25rem;
+    height: 1.25rem;
+    background-color: var(--border-color);
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      background-color: white;
+      border-radius: 50%;
+      top: 0.125rem;
+      left: 0.125rem;
+      transition: transform 0.2s ease;
+    }
+
+    &--active {
+      background-color: var(--primary-color);
+
+      &::after {
+        transform: translateX(1rem);
+      }
+    }
+  }
+
+  // --- Botón Más Opciones (icono ...) ---
+  .more-options-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: var(--text-medium);
+    }
+  }
+
+  // --- Paginación ---
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+    &__records {
+      display: flex;
+      align-items: center;
+    gap: 0.5rem;
+      font-size: 0.875rem;
+    color: var(--text-medium);
+
+      select {
+        padding: 0.375rem 2rem 0.375rem 0.75rem;
+        font-size: 0.875rem;
+        color: var(--text-dark);
+        border: 1px solid var(--primary-light);
+        border-radius: 0.75rem;
+        background-color: var(--background-white);
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236A8BFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 0.5rem center;
+        background-size: 1rem;
+
+        &:focus {
+          outline: none;
+          border-color: var(--primary-color);
+          box-shadow: 0 0 0 1px var(--primary-light);
+        }
+      }
+    }
+
+    &__controls {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    &__btn {
+      min-width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--primary-color);
+      border-radius: 0.95rem;
+      background: var(--background-white);
+      color: var(--primary-color);
+      cursor: pointer;
+      font-size: 0.875rem;
+      transition: all 0.2s ease;
+      padding: 0 0.75rem;
+
+      &:hover:not(&--disabled) {
+        background-color: var(--primary-lighter);
+      }
+
+      &--active {
+        background-color: var(--primary-color);
+        color: white;
+        border-color: var(--primary-color);
+        font-weight: 500;
+      }
+
+      &--disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        border-color: var(--border-color);
+        color: var(--text-light);
+      }
+    }
+  }
+  .options-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 0.15rem;
+    background: #fff;
+    border: 1px solid #e0e7ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    min-width: 140px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+  
+  .options-menu__item {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.92rem;
+    background: none;
+    border: none;
+    text-align: left;
+    color: #222;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .options-menu__item:hover {
+    background: #f1f5ff;
+  }
+  
+  .options-menu__item--danger {
+    color: #e53e3e;
+  }
+  .modal-backdrop-custom {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.32);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-custom {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem 2.5rem 1.5rem 2.5rem;
+    min-width: 340px;
+    max-width: 90vw;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+    p {
+      color: var(--text-light);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    &__actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      }
+  }
+  
+  .um-btn--danger {
+    background: #e11d48;
+    color: #fff;
+    border: none;
+    &:hover {
+      background: #be123c;
+    }
+  }
+} // Fin de .user-management-view
+
+// --- Estilos para Status Badges ---
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+
+  &--success {
+    background: #dcfce7;
+    color: #166534;
+  }
+
+  &--default {
+    background: #f3f4f6;
+    color: #1f2937;
+  }
+
+  &--warning {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  &--error {
+    background: #fecaca;
+    color: #991b1b;
+  }
+}
+
+// --- Estilos adicionales para botones con iconos ---
+.um-btn {
+  &--primary {
+    &:disabled {
+      background: #9ca3af;
+      color: white;
+      cursor: not-allowed;
+      opacity: 0.7;
+
+      &:hover {
+        background: #9ca3af;
+        transform: none;
+      }
+    }
+  }
+}
+
+// --- Estilos para UserConfig ---
+.uc-btn {
+  &--outline {
+    background: transparent;
+    color: var(--primary-600);
+    border: 1px solid var(--primary-600);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+
+    &:hover {
+      background: var(--primary-50);
+      border-color: var(--primary-700);
+      color: var(--primary-700);
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}

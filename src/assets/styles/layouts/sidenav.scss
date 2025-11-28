@@ -1,0 +1,55 @@
+.sidenav-container {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  overflow: hidden;
+
+  .brand {
+    img {
+      width: 70%;
+      align-items: center;
+      padding-left: 15px;
+    }
+  }
+
+  .menu-item {
+    border-radius: 10px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      width: 18px;
+    }
+
+    .label {
+      font-size: 15px;
+    }
+  }
+
+  // Ant Design Menu overrides
+  .ant-menu {
+    &.ant-menu-light {
+      background: transparent;
+    }
+
+    &.ant-menu-inline {
+      border-right: none;
+    }
+
+    .ant-menu-item {
+      margin: 0;
+      padding: 0;
+      
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}

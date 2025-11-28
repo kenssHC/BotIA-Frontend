@@ -1,0 +1,68 @@
+Agente: Le saluda Marielsi. ¿Con quién tengo el gusto?
+Cliente: Buenos días, señorita. Soy Diana Martínez López.
+Agente: Diana, mucho gusto. ¿La consulta es por el mismo número del cual llama?
+Cliente: No, por otro número, que tengo también que que le saqué mi nombre.
+Agente: ¿Cuál sería el número, por favor?
+Cliente: Un momentito, ahorita le brindo. Un momentito, por favor. A ver, a ver, a ver, a ver. Ya, es el nueve treinta y uno. Sí. Cero cinco uno cinco seis cinco.
+Agente: Cinco seis cinco. ¿En qué puedo ayudarle?
+Cliente: Quiero suspender, este, este chip, porque lo perdí. Solamente el chip quisiera, este, darle de baja.
+Agente: ¿Quiere anular el número?
+Cliente: Sí, quiero anular el número, porque, como puede ver, yo tengo este otro chip a mi nombre. Por pérdida.
+Agente: Sí, por pérdida. ¿Es usted la titular de la línea en consulta?
+Cliente: Sí, señorita, sí.
+Agente: ¿Sus nombres y apellidos concretos, por favor?
+Cliente: Dianita Martínez López.
+Agente: ¿Su número de documento de identidad, por favor?
+Cliente: Cuarenta y seis, noventa y tres, sesenta y tres, cincuenta y cinco.
+Agente: El documento brindado es un DNI. ¿Correcto?
+Cliente: Sí, DNI.
+Agente: Un momento, por favor. Un momento, por favor. Sí. Muchas gracias por la espera. Sí. Diana, le indico las consideraciones de la cancelación de la línea. Viene indicarle que el proceso exactamente no tiene costo, indicarle que la cancelación de servicios se realizará en un plazo no menor de cinco días hábiles ni mayor de un mes calendario. Le recordamos que ejecutada la cancelación perderá todos los saldos o promociones que tuviera la línea y también estaría perdiendo el número. Ahora, la solicitud de cancelación estimada cliente puede ser presentada por el titular de forma telefónica o en un centro de atención al cliente. ¿Desea que le transfiera con el área de cancelaciones?
+Cliente: Sí, señorita. Sí, quiero dar de baja ese número.
+Agente: Bien, estamos transfiriéndole al área de cancelaciones. Esto puede demorar unos minutos. Por favor, debe mantenerse en espera, no corte la llamada. Por su seguridad, antes de tomar su solicitud, realizaremos preguntas para validar su titularidad. Por ello, le recomendamos contar con su DNI físico cuando nuestro asesor haga las preguntas de validación. En este momento, todos nuestros asesores se encuentran ocupados. Por favor, espere, en breve lo atenderemos. Recuerde que el horario de atención de esta central es de lunes a domingo, de seis de la mañana a medianoche. Ahora realiza tus trámites de manera rápida y sencilla, esté donde estés. Con la app Mibitel, podrás actualizar tus datos, migrar de plan, reactivar tu línea y Minditel y realiza tú mismo tus trámites con un solo clic, sin salir de tu casa. Señora Pinalca es una de las direcciones y cancelaciones. ¿Con quién tengo el gusto?
+Cliente: Buenos días, señorita. Soy una señora Diana Martínez López.
+Agente: Diana, buenos días. Dígame, permítame que desea realizar la migración de plan o cancelación en la línea.
+Cliente: Quiero cancelar el número, mi chip. Cancelar, dar de baja el número por completo, pierde el número.
+Agente: ¿De acuerdo con ello?
+Cliente: Sí, señorita.
+Agente: Bien, y ese número ¿Me lo brinda el número?
+Cliente: Sí, por favor. Ya. Un momentito. Es nueve treinta y uno, cero cincuenta y uno, cinco seis cinco.
+Agente: Bien. ¿El número a cancelar es el nueve tres uno cero cinco uno cinco seis cinco?
+Cliente: Sí.
+Agente: Bien. En caso de que hagamos la comunicación. ¿Podemos tomar el mismo número de cual llama como referencia?
+Cliente: Sí, porque es mío también.
+Agente: Me indica algún motivo por el cual desea hacer la cancelación. ¿Algún tema personal, económico o solo desea cancelar?
+Cliente: Por pérdida, señorita. Pérdida de chip.
+Agente: Sí, por pérdida. Bien. Solamente el chip se bloquearía. ¿Verdad?
+Cliente: Se da de baja al número al chip, no afecta al teléfono, pero se da de baja al número, no es bloqueo. ¿Sí?
+Agente: Ya, sí. Por eso le indico la única siguiente información con respecto a la cancelación. Indicarle que la cancelación de la línea se realiza en un plazo que es no menor a cinco días hábiles y mayor a un mes calendario. Puede indicar la fecha en la cual desea cancelar el servicio dentro de este plazo indicado. Como está llamando el día de hoy, que es veinticinco de febrero, usted puede hacer la programación de la baja a partir de este, el cinco de marzo, hasta el veintiséis de marzo, ya que son treinta días calendarios como máximo. Diana, bajo esta información. ¿Qué día desea programar la baja de su servicio?
+Cliente: Para por mí fuera hoy día mismo, señorita.
+Agente: Comprendo. Pero no es posible hoy, porque indica que ya tiene un plazo a realizarse, es un plazo no menor a cinco días hábiles, tenía un mayor mes calendario. Como estoy llamando el día de hoy, que es veinticinco de febrero, solicitándolo, calculando, usted puede indicarme una fecha para tomar la baja a partir desde el cinco de marzo hasta el veintiséis de marzo, ya que son treinta días calendarios como máximo. Puede indicar, bajo su explicación, una fecha para así hacer la programación de la baja. ¿Desde el cinco o el seis fue?
+Cliente: Sí. ¿Cinco o seis de marzo?
+Agente: Sí. ¿Seis de marzo?
+Cliente: Sí.
+Agente: Bien. Ahorita no validamos datos. ¿Dime, por favor, sus nombres y apellidos completos?
+Cliente: Dianita Martínez López.
+Agente: ¿Qué indicaría su tipo y número de documento de identidad?
+Cliente: DNI cuarenta y seis, noventa y tres, seis tres cinco cinco.
+Agente: Bien. Contigo validamos unos datos en el sistema, Gardeny. ¿Indique, por favor, su fecha de nacimiento?
+Cliente: Doce de febrero de mil novecientos noventa y uno.
+Agente: Doce de febrero de mil novecientos nueve uno. ¿Indicaría el primer nombre del padre?
+Cliente: Juan.
+Agente: Juan. ¿Primer nombre de la madre?
+Cliente: Rosa.
+Agente: Rosa. ¿Me indicaría el lugar de nacimiento, usted donde usted nació? ¿Departamento, provincia, distrito, departamento?
+Cliente: ¿El mío? Sí, lugar de nacimiento donde usted nació. ¿Departamento, provincia, distrito?
+Cliente: En mi DNI sale que yo lo saqué en La Libertad, pero yo ahora radico, o sea, en San Martín, claro, nací en San Martín. En la provincia de Tocasio, región San Martín.
+Agente: ¿El departamento San Martín?
+Cliente: San Martín. Provincia Tocache.
+Agente: ¿Y viejito?
+Cliente: Tocache.
+Agente: Tocache. Bien, un momento en línea, por favor. Ajá. Bien, así mejor le espero confirmarme sus datos fueron validados de forma correcta. ¿Sí? Así también la compañía la ofrece como segunda opción, como indicó que que lo que ha perdido es el chip, también puede ser lo que es el bloqueo de la línea, con el futuro usted puede hacer la recuperación de este o también puede ser el cambio de SIM card. O, si desea, continuamos con la cancelación de línea.
+Cliente: Sí, está bien. Continuamos con la cancelación.
+Agente: Continuamos con la cancelación. ¿Correcto?
+Cliente: Señorita, cancéle mi mi número.
+Agente: Le indico las consideraciones de cancelación de la línea. El proceso no tiene costo, le damos el servicio para ejecutar para el seis de marzo del veinte veinticinco. Le recuerdo que ejecutará la cancelación, se va a perder todos los saldos, formaciones que tuviera la línea y también se va a perder el número. En base a todo lo explicado. ¿Sería de acuerdo en realizar la cancelación?
+Cliente: Sí, señorita.
+Agente: Listo. ¿Me permite solamente un momento más en línea para así con línea con el proceso? Un momento en línea, por favor. Ok. Espere un momento más en línea, por favor. Ok. Un momento más en línea, por favor, no corte la llamada. No sé. Solo un momento más en línea, por favor, no corte la llamada. Jueguen, pero no llegan, si eso lo veo. Espere un momento más en línea, por favor, reporte la llamada. Ya. Un momento más en línea, por favor. Ya. Bien, no le espé disculpe, de volada. Sí me va a indicarle que cancelación de servicio número móvil del nueve tres uno cero cinco uno cinco seis cinco. Se hace falta el día seis de marzo del veinte veinticinco. Su número de atención es el uno ocho seis seis dos uno siete seis uno. Así también su pre cancelación lo va a recibir vía mensaje de texto o por vía ¿Sí? Hasta aquí todo conforme con la información brindada. ¿Verdad?
+Cliente: Sí, señorita, muchas gracias. Puede comunicarse con nosotros. Enviar recibirá una encuesta burocrática de atención. Me place excelente día, Dianita.
+Agente: Gracias. Ok. Hasta luego. Su opinión es muy importante para nosotros. Lo invitamos a responder una breve encuesta que recibirá vía SMS. Gracias por llamar a Bitel.

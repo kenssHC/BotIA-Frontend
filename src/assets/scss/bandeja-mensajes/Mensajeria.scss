@@ -1,0 +1,166 @@
+// Mensajeria.scss (o tu SCSS principal de página)
+@use "sass:color";
+
+// Variables Generales de Página (si no las tienes en un _variables.scss global)
+$page-bg-color: #f9fbff;
+$container-max-width: 1500px; // Ajustado para más espacio si es necesario
+$panel-gap: 20px; // Espacio entre paneles
+
+$header-title-color: #1f2937;
+$header-subtitle-color: #6b7280;
+$header-title-font-size: 22px;
+$header-subtitle-font-size: 14px;
+
+$button-filter-border-radius: 8px;
+$button-filter-font-size: 14px;
+$search-input-border-color: #d1d5db;
+
+$generic-panel-bg: #ffffff;
+$generic-panel-border-color: #eef0f2; // Borde para paneles genéricos
+$generic-panel-border-radius: 12px; // Radio más consistente
+$generic-panel-padding: 1.25rem; // Padding consistente
+$generic-panel-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); // Sombra consistente
+
+
+// Contenedor Principal de la Bandeja de Mensajes
+.bandeja-container {
+  padding: 24px 32px; // Ajustado padding
+  background-color: $page-bg-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .encabezado {
+    margin-bottom: $panel-gap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; // Para responsiveness
+
+    .texto {
+      .titulo {
+        font-size: $header-title-font-size;
+        font-weight: 700;
+        color: $header-title-color;
+        margin-bottom: 4px;
+      }
+      .subtitulo {
+        font-size: $header-subtitle-font-size;
+        color: $header-subtitle-color;
+      }
+    }
+
+    .acciones {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 8px; // Espacio si se envuelve debajo del título
+
+      .btn-filtros { // Estilos para el botón de Filtros
+        border-radius: $button-filter-border-radius;
+        font-size: $button-filter-font-size;
+        // Asumiendo que usas <Button variant="outline-primary"> o similar de react-bootstrap
+        // Si no, puedes añadir estilos de color/borde aquí
+      }
+
+      .busqueda { // Campo de búsqueda (Form.Control)
+        min-width: 240px; // Ajustado
+        max-width: 300px;
+        font-size: $button-filter-font-size;
+        border-radius: $button-filter-border-radius;
+        border: 1px solid $search-input-border-color;
+        // El padding ya viene con Form.Control de react-bootstrap
+      }
+    }
+  }
+
+  .contenedor-paneles {
+    display: flex;
+    flex-grow: 1;
+    align-items: stretch;
+    gap: $panel-gap;
+    max-width: $container-max-width; 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $panel-gap; // Usando la variable
+  }
+}
+
+// Estilos para InfoPanel (si es un tercer panel)
+.infoPanel { // Manteniendo tu clase original para este panel
+  flex: 0 0 280px; // Ancho fijo, ajustado ligeramente
+  display: flex;
+  flex-direction: column;
+  background-color: $generic-panel-bg;
+  padding: $generic-panel-padding;
+  border-radius: $generic-panel-border-radius;
+  border: 1px solid $generic-panel-border-color;
+  box-shadow: $generic-panel-box-shadow;
+
+  .info-panel-title { // Clase para el título del InfoPanel
+    font-size: 1rem;
+    font-weight: 600;
+    color: $header-title-color;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid $generic-panel-border-color;
+  }
+
+  .contenido-scroll-panel {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    &::-webkit-scrollbar { width: 6px; }
+    &::-webkit-scrollbar-thumb { background-color: #c1cbd4; border-radius: 6px; }
+  }
+
+  .bloque-colapsable {
+    margin-bottom: 1rem;
+    background-color: color.adjust($page-bg-color, $lightness: 2%); // Un color ligeramente diferente al fondo de página
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid $generic-panel-border-color;
+
+    .cabecera {
+      display: flex; justify-content: space-between; align-items: center;
+      cursor: pointer; margin-bottom: 0.75rem;
+      .titulo-bloque {
+        display: flex; align-items: center; gap: 8px;
+        h6 { margin: 0; font-weight: 600; font-size: 0.9rem; color: #374151; }
+        .icono { width: 16px; height: 16px; }
+      }
+    }
+    .contenido-scroll {
+      overflow-y: auto; max-height: 160px; padding: 2px 0;
+      .etiqueta { color: #4f46e5; font-weight: 600; font-size: 0.8rem; margin-bottom: 0.25rem; display: block;}
+
+    }
+  }
+}
+.filtros-panel-container {
+  background-color: white;
+  border: 1px solid $generic-panel-border-color;
+  border-radius: $generic-panel-border-radius;
+  box-shadow: $generic-panel-box-shadow;
+  padding: $generic-panel-padding;
+  margin-top: 1rem; // Espacio superior
+  margin-bottom: 1rem; // Espacio inferior
+  width: 300px; // Ancho del panel de filtros (ajusta según sea necesario)
+  align-self: flex-end; // Alinea el panel a la derecha dentro de su contenedor (si es necesario)
+}
+
+.filtros-overlay {
+  position: absolute; // O 'fixed' si quieres que se quede en la ventana mientras se hace scroll
+  top: 60px; // Ajusta la posición vertical según la altura de tu encabezado
+  right: 20px; // Ajusta la posición horizontal, desde la derecha
+  background-color: white;
+  border: 1px solid $generic-panel-border-color;
+  border-radius: $generic-panel-border-radius;
+  box-shadow: $generic-panel-box-shadow;
+  padding: $generic-panel-padding;
+  z-index: 10; // Asegura que esté por encima de otros elementos
+  width: 300px; // Ancho del panel de filtros
+  // Puedes añadir transiciones para una aparición/desaparición suave
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}

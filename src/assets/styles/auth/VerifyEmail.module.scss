@@ -1,0 +1,70 @@
+@use '../variables' as *;
+.verifyEmailContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: transparent linear-gradient(125deg, #F5F7FF 0%, $secondary-color 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.verifyEmailBox {
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.logo {
+  width: $logo-width;
+  height: $logo-height;
+  margin-bottom: 90px;
+}
+
+.title {
+  font-family: $font-family-primary;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 30px;
+  color: $text-color;
+  text-align: center;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #8E8E8E;
+  text-align: center;
+  margin: 27px 0;
+}
+
+.instructions {
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8E8E8E;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resendLink {
+  font-family: $font-family-secondary;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: $primary-color;
+  text-decoration: none;
+  margin: 30px 0;
+  padding: 10;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

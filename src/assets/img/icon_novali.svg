@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="icon_novali" transform="translate(10.07 8.805)">
+    <circle id="Ellipse_32" data-name="Ellipse 32" cx="24" cy="24" r="24" transform="translate(-10.07 -8.805)" fill="#f5f7ff"/>
+    <g id="icono_bot" transform="translate(-2.137 -0.002)">
+      <path id="Path_103120" data-name="Path 103120" d="M6.694,25.076a4.019,4.019,0,0,1-4.02-4.02V10.338a4.019,4.019,0,0,1,4.02-4.02H22.772a4.019,4.019,0,0,1,4.02,4.02V21.057a4.019,4.019,0,0,1-4.02,4.02H18.4" transform="translate(1.305 2.675)" fill="none" stroke="#6a8bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_160" data-name="Line 160" x2="0.013" transform="translate(12.688 15.692)" fill="none" stroke="#6a8bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_161" data-name="Line 161" x2="0.013" transform="translate(19.387 15.692)" fill="none" stroke="#6a8bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_103121" data-name="Path 103121" d="M9.174,15.318a4.689,4.689,0,0,0,6.631.068l.068-.068" transform="translate(3.514 5.734)" fill="none" stroke="#6a8bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="2.339" cy="2.339" rx="2.339" ry="2.339" transform="translate(14.804 25.494)" fill="none" stroke="#6a8bff" stroke-width="1.5"/>
+      <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="2.339" cy="2.339" rx="2.339" ry="2.339" transform="translate(13.467 1.198)" fill="none" stroke="#6a8bff" stroke-width="1.5"/>
+      <line id="Line_162" data-name="Line 162" y2="3.23" transform="translate(15.807 5.964)" fill="none" stroke="#6a8bff" stroke-width="1.5"/>
+      <path id="Path_103122" data-name="Path 103122" d="M2.976,18.667h0A2.782,2.782,0,0,1,.5,15.657V13.974a2.782,2.782,0,0,1,2.475-3.009" transform="translate(0.566 4.255)" fill="none" stroke="#6a8bff" stroke-width="1.5"/>
+      <path id="Path_103123" data-name="Path 103123" d="M21.044,10.965h0a2.782,2.782,0,0,1,2.475,3.009v1.683a2.782,2.782,0,0,1-2.475,3.009" transform="translate(7.549 4.255)" fill="none" stroke="#6a8bff" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

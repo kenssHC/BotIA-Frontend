@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react'
 import sass from 'sass'
 
 // API Configuration - Usar variables de entorno
-const API_BASE_URL = process.env.VITE_BACKEND_API_URL || 'http://localhost:9543'
+//const API_BASE_URL = process.env.VITE_BACKEND_API_URL || 'http://localhost:9543'
+const API_BASE_URL = process.env.VITE_BACKEND_API_URL || 'http://localhost:4007'
 
 // Proxy Configuration
 const proxyConfig = {
